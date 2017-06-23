@@ -2,9 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>pig dice game</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <title>Pig dice</title>
   </head>
   <body>
 
+    <div class="container">
+      <div class="row"id="first-row">
+        <h1> Let us Play The Game of Pig dice</h1>
+        <img src="images/1.jpg" alt="">
+        <h2>OBJECTIVES AND RULES OF THE GAME</h2>
+        <p><strong>The first player to reach a total score of 100
+             or more will win,If a player rolls 1 at any point during their turn
+              is over and they lose any points from that turn that they collected.</strong></p>
+        <form id="form-one">
+          <label for="name">Player1 PHILGONA :</label>
+          <input type="text" id="player1-" required>
+          <label for="name"> player2 ESther:</label>
+          <input type="text" id="player2-" required>
+          <button type="submit" class="btn">Start Playing!</button>
+        </form>
+      </div>
+        <div id="game-stats" class="row">
+          <div id="player1-turn" class="col-md-6">
+            <h2><span id="output-name1"></span></h2>
+            <div id="player1 pholgona-buttons">
+              <button id="roll-1" type="button">Roll</button>
+              <button id="hold-1" type="button">Hold</button>
+            </div>
+            <h4>Your Turn Score: <span id="turn-score1"></span></h4>
+            <h4>Your Total Score: <span id="total-score1"></span></h4>
+          </div>
+          <div class="col-md-4">
+            <h2>Last Roll</h2>
+            <h3><span id="roll-number-display"></span></h3>
+          </div>
+          <div id="player2-turn" class="col-md-4">
+            <h2><span id="output-name2"></span></h2>
+            <div id="player2-buttons">
+              <button id="roll-2" type="button">Roll</button>
+              <button id="hold-2" type="button">Hold</button>
+            </div>
+            <h4>Your Turn Score: <span id="turn-score2"></span></h4>
+            <h4>Your Total Score: <span id="total-score2"></span></h4>
+          </div>
+          <button id="reset" type="button">Reset</button>
+        </div>
+
+
+      <div>
+
+     </div>
+    </div>
   </body>
 </html>
